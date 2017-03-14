@@ -65,7 +65,7 @@ error_bars = function(df, x, s = NULL){
     theme_bw()
   
   
-  
+   
   error_bars.out = structure(list(plot = errorbars_plot,
                                   df.summary = df.summary,
                                   df = df.copy),
