@@ -67,7 +67,8 @@ error_bars = function(df, x, s = NULL){
   
   
   error_bars.out = structure(list(plot = errorbars_plot,
-                                  df.summary = df.summary),
+                                  df.summary = df.summary,
+                                  df = df.copy),
                              class = 'error_bars.object')
   
   return(error_bars.out)
