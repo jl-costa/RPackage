@@ -1,6 +1,6 @@
-Package: RGeneral
+Package: RPackage
 Type: Package
-Title: RGeneral - a package for functions created by Bertie Vidgen
+Title: RPackage - a package for functions created by Bertie Vidgen
 Version: 0.1
 Date: 2017-03-14
 Author: Bertie Vidgen <bertievidgen@gmail.com>

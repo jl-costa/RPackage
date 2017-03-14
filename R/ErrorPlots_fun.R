@@ -1,4 +1,5 @@
 # ErrorPlots_fun
+# the real deal
 
 #'@title error_bars
 #'@description analysis of error bars for a variable
