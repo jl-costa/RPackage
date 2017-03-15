@@ -11,7 +11,7 @@
 
  
  
-error_bars = function(df, s = NULL, draw='standard error'){
+error_bars = function(df, s = NULL, draw='both'){
   # where df= the dataframe containing the  values. It must be formated as (data.frame(x,y)) for the code to work.
   # s = a vector of cuts to split up the data by (this can also be generated automatically)
   
