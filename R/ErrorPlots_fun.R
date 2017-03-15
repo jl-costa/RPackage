@@ -15,6 +15,17 @@ error_bars = function(df, s = NULL, draw='both'){
   # where df= the dataframe containing the  values. It must be formated as (data.frame(x,y)) for the code to work.
   # s = a vector of cuts to split up the data by (this can also be generated automatically)
   
+  if (!'ggplot2' %in% installed.packages())
+    stop("ggplot2 must be installed and loaded to continue")
+  if(!"package:ggplot2" %in% search())
+    library(ggplot2)
+  
+  if (!'dplyr' %in% installed.packages())
+    stop("dplyr must be installed and loaded to continue")
+  if(!"package:dplyr" %in% search())
+    library(dplyr)
+  
+  
   # check the format of the variables:
   if (!missing(s)){
     if (!is.numeric(s))
