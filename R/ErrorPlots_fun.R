@@ -17,12 +17,16 @@ error_bars = function(df, s = NULL, draw='both'){
   
   if (!'ggplot2' %in% installed.packages())
     stop("ggplot2 must be installed and loaded to continue")
+  
   if(!"package:ggplot2" %in% search())
+    print('ggplot2 is now loaded in the environment. Rerun the command to use the error_bars() function')
     library(ggplot2)
   
   if (!'dplyr' %in% installed.packages())
     stop("dplyr must be installed and loaded to continue")
+ 
   if(!"package:dplyr" %in% search())
+    print('dplyr is now loaded in the environment. Rerun the command to use the error_bars() function')
     library(dplyr)
   
   
