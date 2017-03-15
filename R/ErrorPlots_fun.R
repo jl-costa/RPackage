@@ -10,6 +10,7 @@
 
 
 
+
 error_bars = function(df, s = NULL){
   # where df= the dataframe containing the  values. It must be formated as (data.frame(x,y)) for the code to work.
   # s = a vector of cuts to split up the data by (this can also be generated automatically)
@@ -22,10 +23,11 @@ error_bars = function(df, s = NULL){
       stop("'s' must be at least 3 values long")
   }
   
+  # create 'x' object:
+  x = df[,1]
   
   # create 's' vector if it is missing:
   if(missing(s)) {
-    x = df[,1]
     a = min(floor(x))
     b = max(ceiling(x))
     c = (b - a) / 10
@@ -75,7 +77,7 @@ error_bars = function(df, s = NULL){
     theme_bw()
   
   
-  # Create the output object:
+  
   error_bars.out = structure(list(plot = errorbars_plot,
                                   df.summary = df.summary,
                                   df = df.copy),
