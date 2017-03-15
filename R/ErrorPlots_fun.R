@@ -8,7 +8,7 @@
 #'@return an 'error_bars.out' object which contains (i) a dataframe of useful summary variables (ii) a dot plot showing the error bars, and (iii) a copy of the original dataframe with the bin_x variable appended as a third column.
 #'@export
 
-
+ 
  
 error_bars = function(df, s = NULL){
   # where df= the dataframe containing the  values. It must be formated as (data.frame(x,y)) for the code to work.
