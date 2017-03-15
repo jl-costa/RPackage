@@ -4,7 +4,7 @@
 \alias{error_bars}
 \title{error_bars}
 \usage{
-error_bars(df, s = NULL, draw = "standard error")
+error_bars(df, s = NULL, draw = "both")
 }
 \arguments{
 \item{df}{name of the dataframe that you want to analyse. This MUST be of the format data.frame(x,y), otherwise it will NOT work.}
