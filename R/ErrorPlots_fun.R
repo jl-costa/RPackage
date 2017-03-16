@@ -40,7 +40,7 @@ error_bars = function(df, s = NULL, draw='both'){
   
   # check the dataframe:
   if (class(df) != "data.frame"){
-    stop("df must be a dataframe object.")
+    stop("df must be a dataframe object and must have only two columns (x,y).")
   }
   if (ncol(df) != 2){
     stop("df must have only two columns: (x,y)")
