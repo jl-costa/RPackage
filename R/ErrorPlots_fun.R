@@ -80,7 +80,7 @@ error_bars = function(df, s = NULL, draw='both'){
   
   
   # create the bin_x
-  df.copy$bin_x = cut(x, breaks = c(-Inf, s, Inf), 
+  df.copy$bin_x = cut(df.copy$x, breaks = c(-Inf, s, Inf), 
                       labels = c(s, Inf))
   df.copy$bin_x <- as.numeric(as.character(df.copy$bin_x))
   
